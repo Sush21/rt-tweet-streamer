@@ -11,7 +11,7 @@ const Navbar = () => {
         {handles.map(item =>
           <button className="button-outline ui twitter button"
             key={item}
-            onClick={() => setHandle(item)}>
+          >
             @{item.toUpperCase()}
           </button>)}
       </div>
