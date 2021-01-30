@@ -1,10 +1,7 @@
 import React from 'react';
 import './Header.css';
-import Navbar from './Navbar';
-import { banner } from './AppConfig';
 
-
-const Header = () => {
+const Header = ({profileBanner}) => {
 
   return (
     <div className={"ui container"}>
@@ -15,10 +12,9 @@ const Header = () => {
           <div className="sub header">Powered by Faycel Touili</div>
         </div>
       </h1>
-      <img className="ui image" src={banner} alt="banner"></img>
-      <Navbar />
+      <img className="ui image" src={profileBanner} alt="banner"></img>
     </div>
   )
-}
+};
 
 export default Header;
