@@ -1,9 +1,7 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { handles } from '../UseHelper';
-import tweets from '../TestsData';
 import App from '../App';
-import useTwitter from '../useTwitter';
 
 describe('App', () => {
   let wrapper;
@@ -32,6 +30,5 @@ describe('App', () => {
       .simulate('click');
     expect(setHandle).toBeTruthy();
     expect(global.scrollTo).not.toHaveBeenCalled();
-    // expect(global.scrollTo).toHaveBeenCalledWith(0, 0);
   });
 });

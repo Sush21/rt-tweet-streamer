@@ -8,11 +8,6 @@ import './Navbar.css';
 const Navbar = ({ changeHandle }) => {
   const [scrolled, setScrolled] = useState(false);
 
-  // const handleScroll = () => {
-  //   if (window.scrollY > 200) setScrolled(true);
-  //   else setScrolled(false);
-  // };
-
   useEffect(() => document.addEventListener('scroll', () => {
     if (window.scrollY > 200) setScrolled(true);
     else setScrolled(false);

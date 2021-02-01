@@ -22,10 +22,11 @@ const useTwitter = (handle, maxId) => {
       params,
     }).then((res) => {
       setTweets((prevTweets) => [...prevTweets, ...res.data]);
+      setIsLoading(false);
     }).catch(() => {
       setError(true);
+      setIsLoading(false);
     });
-    return () => { setIsLoading(false); };
   }, [handle, maxId]);
 
   return [tweets, isLoading, error];

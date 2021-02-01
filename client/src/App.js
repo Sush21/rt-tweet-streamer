@@ -14,6 +14,8 @@ const App = () => {
   const observer = useRef();
   const [tweets, isLoading, error] = useTwitter(handle, maxId);
 
+  // switching between making a call to api to fetch the new account
+  // or scroll to top if we select the current account
   const changeHandle = (selectedHandle) => {
     if (selectedHandle === handle) {
       setTimeout(() => {
@@ -22,7 +24,10 @@ const App = () => {
     } else setHandle(selectedHandle);
   };
 
+  // handle fetching from Api when we reach the last tweet
   const lastTweetElementRef = useCallback((node) => {
+    console.log('....here', isLoading);
+
     if (isLoading) return;
 
     const lastTweetId = tweets[tweets.length - 1].id_str;

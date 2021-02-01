@@ -6,8 +6,6 @@ import { handles } from '../UseHelper';
 
 describe('Header', () => {
   const mockFn = jest.fn();
-  const offset = 201;
-  const spyScrollTo = jest.fn();
 
   it('should be defined', () => {
     expect(Navbar).toBeDefined();
@@ -28,13 +26,4 @@ describe('Header', () => {
     button.simulate('click');
     expect(mockFn).toHaveBeenCalled();
   });
-  // it('test page scrolling', () => {
-  //   const wrapper = shallow(
-  //     <Navbar changeHandle={mockFn} />,
-  //   );
-  //   window.scrollTo = jest.fn();
-  //   const button = wrapper.find('Button').first().dive();
-  //   button.simulate('click');
-  //   expect(window.scrollTo).toBeCalledWith(0, 0);
-  // });
 });
