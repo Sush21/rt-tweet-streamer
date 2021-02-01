@@ -33,7 +33,7 @@ const TweetCard = ({ tweet }) => (
               target="_blank"
               rel="noreferrer"
             >
-              {moment(tweet.created_at).startOf('day').fromNow()}
+              {moment(tweet.created_at, 'ddd MMM DD HH:mm:ss ZZ YYYY').startOf('day').fromNow()}
             </a>
           </div>
         </div>
@@ -59,6 +59,7 @@ TweetCard.propTypes = {
     screen_name: PropTypes.string.isRequired,
     created_at: PropTypes.string.isRequired,
     full_text: PropTypes.string.isRequired,
+    id_str: PropTypes.string.isRequired,
     favorite_count: PropTypes.number.isRequired,
   }).isRequired,
 

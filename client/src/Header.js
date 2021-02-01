@@ -7,7 +7,7 @@ const Header = ({ profileBanner }) => (
   <div className="ui container">
     <div />
     <h1 className="ui header">
-      <div className="content ui blue small header">
+      <div className="ui content blue small header">
         Real Time Tweet Streamer
         <div className="sub header">
           <div className="meta">

@@ -10,9 +10,9 @@ import banner from './assets/images/banner.jpg';
 
 const App = () => {
   const [maxId, setMaxId] = useState('');
-  const [handle, setHandle] = useState('potus');
+  const [handle, setHandle] = useState('twitter');
   const observer = useRef();
-  const { tweets, isLoading, error } = useTwitter(handle, maxId);
+  const [tweets, isLoading, error] = useTwitter(handle, maxId);
 
   const changeHandle = (selectedHandle) => {
     if (selectedHandle === handle) {
@@ -46,7 +46,7 @@ const App = () => {
     <>
       <Header profileBanner={profileBanner} />
       <div className="ui container">
-        <Navbar handle={handle} changeHandle={changeHandle} />
+        <Navbar changeHandle={changeHandle} />
         {tweets.map((tweet, index) => ((tweets.length === index + 1)
           ? (
             <div ref={lastTweetElementRef} key={tweet.id_str}>

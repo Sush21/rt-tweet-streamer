@@ -1,13 +1,13 @@
 import React from 'react';
 
+export const BASE_URL = 'http://localhost:3001';
 export const handles = ['potus', 'elonmusk', 'CDCgov', 'seniorly'];
 export const digits = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-export const BASE_URL = 'http://localhost:3001';
 
-// convert Likes to K Formst
+// convert Likes to K Format
 export const kFormatter = (num) => (num > 999 ? `${(num / 1000).toFixed(1)}k` : num);
 
-// check if the tweet has any tags or links
+// check if the tweet has any mentions or links
 export const checkForLinks = (str) => {
   let i = 0; let k = 0; let
     key = 0;
