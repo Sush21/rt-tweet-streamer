@@ -16,9 +16,19 @@
 
    `$ cd client && npm install`
 
+3. #### Configuer Twitter Api keys
 
+   You can generate keys and tokens in [The Twitter developer portal](https://developer.twitter.com/en/apps)
 
-3. #### Available Scripts
+   Follow these [Insructions:](https://developer.twitter.com/en/docs/basics/authentication/guides/securing-keys-and-tokens)
+
+   Create a .env file in the root directory and save your keys as following:
+   `CONSUMER_KEY='your customer key'
+   CONSUMER_SECRET='your customer secret'
+   ACCESS_TOKEN_KEY='your access token key'
+   ACCESS_TOKEN_SECRET='your access token secret'`
+
+4. #### Available Scripts
 
    In the project directory, you can run:
 
@@ -33,6 +43,6 @@
 
    `$ npm run test`
 
-Launches the test runner in the interactive watch mode.
+   Launches the test runner in the interactive watch mode.
 
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
