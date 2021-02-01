@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { BASE_URL } from './UseHelper';
 
+// A custom React Hook to fetch data from backend
 const useTwitter = (handle, maxId) => {
   const [tweets, setTweets] = useState([]);
   const [isLoading, setIsLoading] = useState(false);

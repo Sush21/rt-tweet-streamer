@@ -1,7 +1,9 @@
 import React from 'react';
 
 export const BASE_URL = 'http://localhost:3001';
+// Available accounts handles to display in Navbar
 export const handles = ['potus', 'elonmusk', 'CDCgov', 'seniorly'];
+// for handling display of buttons
 export const digits = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 
 // convert Likes to K Format
