@@ -26,8 +26,6 @@ const App = () => {
 
   // handle fetching from Api when we reach the last tweet
   const lastTweetElementRef = useCallback((node) => {
-    console.log('....here', isLoading);
-
     if (isLoading) return;
 
     const lastTweetId = tweets[tweets.length - 1].id_str;
