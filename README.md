@@ -23,9 +23,13 @@
    Follow these [Insructions](https://developer.twitter.com/en/docs/basics/authentication/guides/securing-keys-and-tokens)
 
    Create a .env file in the root directory and save your keys as following:
+
    CONSUMER_KEY='your customer key'
+
    CONSUMER_SECRET='your customer secret'
+
    ACCESS_TOKEN_KEY='your access token key'
+
    ACCESS_TOKEN_SECRET='your access token secret'
 
 4. #### Available Scripts
