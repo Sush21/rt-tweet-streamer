@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { PORT }  = require("./config");
 const express = require('express');
 const Twitter = require('twitter');
 const cors = require('cors');
@@ -61,7 +62,7 @@ app.route('/:handle')
     });
   });
 
-app.listen(3001, (error) => {
+app.listen(PORT, (error) => {
   // eslint-disable-next-line no-console
   console.log(error);
   // eslint-disable-next-line no-console
